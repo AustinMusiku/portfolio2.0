@@ -43,6 +43,17 @@ nav{
                     }
                 }
             }
+            li:hover{
+                a{
+                    font-size: $fs-p;
+                    color: $accent-color;
+
+                    i{
+                        font-size: $fs-3;
+                        color: $accent-color;
+                    }
+                }
+            }
         }
     }
 }

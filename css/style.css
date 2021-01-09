@@ -4,15 +4,12 @@ nav .container {
   justify-content: space-between;
   align-items: center;
 }
-nav .container .nav-links {
-  display: flex;
-  justify-content: space-between;
-  max-width: 40%;
-}
+nav .container .nav-links,
 nav .container .nav-links .social {
+  position: relative;
   display: flex;
   justify-content: space-between;
-  max-width: 40%;
+  max-width: 30%;
 }
 nav .container .nav-links li,
 nav .container .nav-links .social li {
@@ -298,6 +295,16 @@ nav .container .nav-links li a i,
 nav .container .nav-links .social li a i {
   font-size: 2.2rem;
   color: #1f2937;
+}
+nav .container .nav-links li:hover a,
+nav .container .nav-links .social li:hover a {
+  font-size: 1.15rem;
+  color: #00cdac;
+}
+nav .container .nav-links li:hover a i,
+nav .container .nav-links .social li:hover a i {
+  font-size: 2.2rem;
+  color: #00cdac;
 }
 
 h1 .h1-name {
