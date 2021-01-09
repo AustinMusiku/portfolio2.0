@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+
+$ff: 'Open Sans', san-serif;
+$fs-large: 5.6rem;
+$fs-1: 4rem;
+$fs-2: 2.6rem;
+$fs-3: 2.2rem;
+$fs-4: 1.8rem;
+$fs-p: 1.15rem;
+
+$primary-color: #1f2937;
+$accent-color: #00cdac;
+$secondary-color: #333333;
+$neutral-color: #fff;
+
+*{
+    font-family: $ff;
+    font-weight: 400;
+}
+
+.logo{
+    background-image: linear-gradient(135deg,#02aab0,#00cdac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: $fs-4;
+}
+
+//navbar 
+
+nav{
+    .container{
+        .nav-links,
+        .nav-links .social{
+            li{
+                a{
+                    font-size: $fs-p;
+                    color: $primary-color;
+
+                    i{
+                        font-size: $fs-3;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// showcase
+
+h1 .h1-name {
+    font-size: $fs-large;
+    font-weight: 400;
+    color: $secondary-color;
+}
+
+h1 .h1-greeting{
+    font-size: $fs-4;
+    color: $primary-color;
+}
+
+h1{
+    font-size: $fs-1;
+    font-family: $ff;
+    font-weight: 300;
+    line-height: 1.2;
+    color: $secondary-color;
+}
+
+h2{
+    font-size: $fs-2;
+    color: $accent-color;
+}
+
+h3{
+    font-size: $fs-3;
+    color: $primary-color;
+}
+
+p{
+    font-size: $fs-p;
+    color: $primary-color;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    $fs-large: 1rem;
+    $fs-1: 1rem;
+    $fs-2: 2.1rem;
+    $fs-3: 1.8rem;
+    $fs-4: 1.2rem;
+    $fs-p: 1.15rem;
+ }

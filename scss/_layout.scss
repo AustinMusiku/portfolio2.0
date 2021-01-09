@@ -1,0 +1,65 @@
+//paddings and margins
+$spaceamounts: (1,2,3,4,5);
+
+@each $space in $spaceamounts{
+    .m-#{$space}{
+        margin: #{$space}em;
+    }
+    .p-#{$space}{
+        padding: #{$space}em;
+    }
+    .mx-#{$space}{
+        margin: #{$space}em;
+    }
+    .px-#{$space}{
+        padding: #{$space}em;
+    }
+    .my-#{$space}{
+        margin: #{$space}em 0;
+    }
+    .py-#{$space}{
+        padding: #{$space}em 0;
+    }
+}
+
+.container{
+    padding: 0 5em;
+}
+
+.hero{
+    height: 100vh;
+}
+
+section{
+    border-bottom: 1px solid black;
+}
+
+// Responsive
+
+@media only screen and (max-width: 768px){
+
+    @each $space in $spaceamounts{
+        .m-#{$space}{
+            margin: #{$space}em;
+        }
+        .p-#{$space}{
+            padding: #{$space}em;
+        }
+        .mx-#{$space}{
+            margin: 0 #{$space}em;
+        }
+        .px-#{$space}{
+            padding: 0 #{$space}em;
+        }
+        .my-#{$space}{
+            margin: #{$space}em auto;
+        }
+        .py-#{$space}{
+            padding: #{$space}em 0;
+        }
+    }
+
+    .container{
+        padding: 0 1.5em;
+    } 
+}

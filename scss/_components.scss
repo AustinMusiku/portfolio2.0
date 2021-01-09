@@ -1,0 +1,27 @@
+nav{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav-links{
+            display: flex;
+            justify-content: space-between;
+            max-width: 40%;
+        }
+
+        .nav-links .social{
+            display: flex;
+            justify-content: space-between;
+            max-width: 40%;
+        }
+
+        .nav-links,
+        .nav-links .social{
+            li{
+                padding: 15px 30px;
+            }
+        }
+    }
+}
+

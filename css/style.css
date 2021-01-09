@@ -1,0 +1,355 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .container .nav-links {
+  display: flex;
+  justify-content: space-between;
+  max-width: 40%;
+}
+nav .container .nav-links .social {
+  display: flex;
+  justify-content: space-between;
+  max-width: 40%;
+}
+nav .container .nav-links li,
+nav .container .nav-links .social li {
+  padding: 15px 30px;
+}
+
+.m-1 {
+  margin: 1em;
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.mx-1 {
+  margin: 1em;
+}
+
+.px-1 {
+  padding: 1em;
+}
+
+.my-1 {
+  margin: 1em 0;
+}
+
+.py-1 {
+  padding: 1em 0;
+}
+
+.m-2 {
+  margin: 2em;
+}
+
+.p-2 {
+  padding: 2em;
+}
+
+.mx-2 {
+  margin: 2em;
+}
+
+.px-2 {
+  padding: 2em;
+}
+
+.my-2 {
+  margin: 2em 0;
+}
+
+.py-2 {
+  padding: 2em 0;
+}
+
+.m-3 {
+  margin: 3em;
+}
+
+.p-3 {
+  padding: 3em;
+}
+
+.mx-3 {
+  margin: 3em;
+}
+
+.px-3 {
+  padding: 3em;
+}
+
+.my-3 {
+  margin: 3em 0;
+}
+
+.py-3 {
+  padding: 3em 0;
+}
+
+.m-4 {
+  margin: 4em;
+}
+
+.p-4 {
+  padding: 4em;
+}
+
+.mx-4 {
+  margin: 4em;
+}
+
+.px-4 {
+  padding: 4em;
+}
+
+.my-4 {
+  margin: 4em 0;
+}
+
+.py-4 {
+  padding: 4em 0;
+}
+
+.m-5 {
+  margin: 5em;
+}
+
+.p-5 {
+  padding: 5em;
+}
+
+.mx-5 {
+  margin: 5em;
+}
+
+.px-5 {
+  padding: 5em;
+}
+
+.my-5 {
+  margin: 5em 0;
+}
+
+.py-5 {
+  padding: 5em 0;
+}
+
+.container {
+  padding: 0 5em;
+}
+
+.hero {
+  height: 100vh;
+}
+
+section {
+  border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+  .m-1 {
+    margin: 1em;
+  }
+
+  .p-1 {
+    padding: 1em;
+  }
+
+  .mx-1 {
+    margin: 0 1em;
+  }
+
+  .px-1 {
+    padding: 0 1em;
+  }
+
+  .my-1 {
+    margin: 1em auto;
+  }
+
+  .py-1 {
+    padding: 1em 0;
+  }
+
+  .m-2 {
+    margin: 2em;
+  }
+
+  .p-2 {
+    padding: 2em;
+  }
+
+  .mx-2 {
+    margin: 0 2em;
+  }
+
+  .px-2 {
+    padding: 0 2em;
+  }
+
+  .my-2 {
+    margin: 2em auto;
+  }
+
+  .py-2 {
+    padding: 2em 0;
+  }
+
+  .m-3 {
+    margin: 3em;
+  }
+
+  .p-3 {
+    padding: 3em;
+  }
+
+  .mx-3 {
+    margin: 0 3em;
+  }
+
+  .px-3 {
+    padding: 0 3em;
+  }
+
+  .my-3 {
+    margin: 3em auto;
+  }
+
+  .py-3 {
+    padding: 3em 0;
+  }
+
+  .m-4 {
+    margin: 4em;
+  }
+
+  .p-4 {
+    padding: 4em;
+  }
+
+  .mx-4 {
+    margin: 0 4em;
+  }
+
+  .px-4 {
+    padding: 0 4em;
+  }
+
+  .my-4 {
+    margin: 4em auto;
+  }
+
+  .py-4 {
+    padding: 4em 0;
+  }
+
+  .m-5 {
+    margin: 5em;
+  }
+
+  .p-5 {
+    padding: 5em;
+  }
+
+  .mx-5 {
+    margin: 0 5em;
+  }
+
+  .px-5 {
+    padding: 0 5em;
+  }
+
+  .my-5 {
+    margin: 5em auto;
+  }
+
+  .py-5 {
+    padding: 5em 0;
+  }
+
+  .container {
+    padding: 0 1.5em;
+  }
+}
+* {
+  font-family: "Open Sans", san-serif;
+  font-weight: 400;
+}
+
+.logo {
+  background-image: linear-gradient(135deg, #02aab0, #00cdac);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.8rem;
+}
+
+nav .container .nav-links li a,
+nav .container .nav-links .social li a {
+  font-size: 1.15rem;
+  color: #1f2937;
+}
+nav .container .nav-links li a i,
+nav .container .nav-links .social li a i {
+  font-size: 2.2rem;
+  color: #1f2937;
+}
+
+h1 .h1-name {
+  font-size: 5.6rem;
+  font-weight: 400;
+  color: #333333;
+}
+
+h1 .h1-greeting {
+  font-size: 1.8rem;
+  color: #1f2937;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "Open Sans", san-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #333333;
+}
+
+h2 {
+  font-size: 2.6rem;
+  color: #00cdac;
+}
+
+h3 {
+  font-size: 2.2rem;
+  color: #1f2937;
+}
+
+p {
+  font-size: 1.15rem;
+  color: #1f2937;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
