@@ -1,23 +1,140 @@
+@import 'typography';
+
 nav{
     .container{
         display: flex;
         justify-content: space-between;
+
         align-items: center;
 
-        .nav-links,
-        .nav-links .social{
-            position: relative;
+        .nav-linkss{
             display: flex;
             justify-content: space-between;
-            max-width: 30%;
+            align-items: center;
+
+            .nav-links,
+            .nav-links .social{
+                position: relative;
+                display: flex;
+                justify-content: space-between;
+
+                li{
+                    padding: 15px 30px;
+                }
+            }
         }
 
-        .nav-links,
-        .nav-links .social{
-            li{
-                padding: 15px 30px;
+        .logo{
+            padding: 15px 60px 15px 0;
+        }
+
+        .ham{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 20px;
+            width: 45px;
+            span{
+                position: relative;
+                height: 2px;
+                width: 100%;
+                background-color: $primary-color;
             }
+
+            display: none;
         }
     }
 }
 
+
+// buttons 
+%btn{
+    margin: 20px 0px;
+    padding: 10px 35px;
+    border: 1px solid $accent-color;
+}
+
+.btn{
+    @extend %btn;
+    color: $accent-color;
+}
+.cta{
+    @extend %btn;
+    background-color: $accent-color;
+    color: $neutral-color;
+}
+
+// responsive
+
+@media only screen and (max-width: 768px){
+    nav{
+        .container{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+            .logo{
+                padding: 0;
+            }
+
+            .nav-linkss{
+                
+                z-index: 500;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                padding: 10em 1.25em;
+                display: flex;
+                flex-direction: column;
+                background-color: $secondary-color;
+                color: $neutral-color;
+
+                .nav-links{
+                    display: flex;
+                    justify-content: space-between;
+
+                    li{
+                        padding: 15px 30px;
+                    }
+                }
+
+                .nav-links{
+                  flex-direction: column;
+                }
+
+                .navi-links{
+
+                    height: 70%;
+
+                }
+
+                .social{
+                    padding: 2em 0 0;
+                    flex-direction: row;
+                }
+                
+            }
+
+            .ham{
+                z-index: 501;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 20px;
+                width: 45px;
+
+                span{
+                    position: relative;
+                    height: 2px;
+                    width: 100%;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }    
+}

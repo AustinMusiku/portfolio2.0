@@ -8,6 +8,8 @@ $spaceamounts: (1,2,3,4,5);
     .p-#{$space}{
         padding: #{$space}em;
     }
+
+    // padding & margin up/down 
     .mx-#{$space}{
         margin: #{$space}em;
     }
@@ -20,44 +22,52 @@ $spaceamounts: (1,2,3,4,5);
     .py-#{$space}{
         padding: #{$space}em 0;
     }
+
+    // padding & margin up only
+
+    .myu-#{$space}{
+        margin-top: #{$space}em;
+    }
+    .pyu-#{$space}{
+        padding-top: #{$space}em;
+    }
+
+    // padding & margin down only
+    
+    .myd-#{$space}{
+        margin-bottom: #{$space}em;
+    }
+    .pyd-#{$space}{
+        padding-bottom: #{$space}em;
+    }
 }
 
 .container{
     padding: 0 5em;
 }
 
-.hero{
-    height: 100vh;
-}
-
 section{
     border-bottom: 1px solid black;
 }
 
+// showcase
+
+.showcase{
+    height: 100vh;
+}
+
+.showcase .hero .container{
+    position: relative;
+}
+
+.showcase .hero .container .hero-text{
+   background-color: $neutral-color; 
+}
+
+
 // Responsive
 
 @media only screen and (max-width: 768px){
-
-    @each $space in $spaceamounts{
-        .m-#{$space}{
-            margin: #{$space}em;
-        }
-        .p-#{$space}{
-            padding: #{$space}em;
-        }
-        .mx-#{$space}{
-            margin: 0 #{$space}em;
-        }
-        .px-#{$space}{
-            padding: 0 #{$space}em;
-        }
-        .my-#{$space}{
-            margin: #{$space}em auto;
-        }
-        .py-#{$space}{
-            padding: #{$space}em 0;
-        }
-    }
 
     .container{
         padding: 0 1.5em;
