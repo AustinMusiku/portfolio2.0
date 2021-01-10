@@ -8,7 +8,6 @@
     "compile-sass": "sass scss/main.scss css/style.css",
     "build-css": "npm-run-all compile-sass"
   },
-  "dependancies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MusikuAustin/portfolio2.0.git"
@@ -20,6 +19,7 @@
   },
   "homepage": "https://github.com/MusikuAustin/portfolio2.0#readme",
   "dependencies": {
-    "npm-run-all": "^4.1.5"
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.32.2"
   }
 }
