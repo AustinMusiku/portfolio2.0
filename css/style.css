@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
-* {
-  font-family: "Open Sans", san-serif;
-  font-weight: 400;
-}
-
 h1 {
   font-size: 5rem;
   line-height: 1;
@@ -157,12 +152,18 @@ nav .container .ham span {
 
 @media only screen and (max-width: 768px) {
   nav .container {
-    position: relative;
+    z-index: 499;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.747);
   }
   nav .container .logo {
     padding: 0;
@@ -171,7 +172,7 @@ nav .container .ham span {
     z-index: 500;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 100%;
     width: 100vw;
     height: 100vh;
     padding: 10em 1.25em;
@@ -179,6 +180,7 @@ nav .container .ham span {
     flex-direction: column;
     background-color: #333333;
     color: #fff;
+    transition: 0.25s ease-in;
   }
   nav .container .nav-linkss .nav-links {
     display: flex;
@@ -197,19 +199,49 @@ nav .container .ham span {
     padding: 2em 0 0;
     flex-direction: row;
   }
+  nav .container .active {
+    left: 0;
+  }
   nav .container .ham {
     z-index: 501;
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 20px;
+    justify-content: space-around;
+    height: 24px;
     width: 45px;
   }
   nav .container .ham span {
-    position: relative;
     height: 2px;
     width: 100%;
     background-color: #555555;
+    transition: 0.25s ease-in;
+    animation: hamReveal;
+  }
+  @keyframes hamReveal {
+    0% {
+      visibility: hidden;
+    }
+    80% {
+      visibility: hidden;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  nav .container .ham .ham-bar-one-active {
+    transform: rotate(45deg);
+  }
+  nav .container .ham .ham-bar-two-active {
+    display: none;
+  }
+  nav .container .ham .ham-bar-three-active {
+    transform: rotate(-45deg);
+  }
+  nav .container .ham .ham-bar-one-active,
+nav .container .ham .ham-bar-two-active,
+nav .container .ham .ham-bar-three-active {
+    position: absolute;
   }
 }
 .m-1 {
@@ -416,6 +448,10 @@ nav .container .ham span {
   padding: 0 5em;
 }
 
+header {
+  width: 100%;
+}
+
 section {
   border-bottom: 1px solid black;
 }
@@ -437,11 +473,6 @@ section {
     padding: 0 1.5em;
   }
 }
-* {
-  font-family: "Open Sans", san-serif;
-  font-weight: 400;
-}
-
 h1 {
   font-size: 5rem;
   line-height: 1;
@@ -543,6 +574,7 @@ h2 {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", san-serif;
 }
 
 img {

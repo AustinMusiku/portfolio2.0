@@ -14,12 +14,7 @@ $primary-color: #555555;
 $accent-color: #5899f5;
 $secondary-color: #333333;
 $neutral-color: #fff;
-
-
-*{
-    font-family: $ff;
-    font-weight: 400;
-}
+$neutral-light-color: rgba(255, 255, 255, 0.747);
 
 h1{
     font-size: $fs-1;

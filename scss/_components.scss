@@ -68,24 +68,30 @@ nav{
 
 @media only screen and (max-width: 768px){
     nav{
+        
         .container{
-            position: relative;
+            z-index: 499;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 12vh;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding-top: 20px;
             padding-bottom: 20px;
-
+            background-color: $neutral-light-color;
+            
             .logo{
                 padding: 0;
             }
 
             .nav-linkss{
-                
                 z-index: 500;
                 position: absolute;
                 top: 0;
-                left: 0;
+                left: 100%;
                 width: 100vw;
                 height: 100vh;
                 padding: 10em 1.25em;
@@ -93,6 +99,7 @@ nav{
                 flex-direction: column;
                 background-color: $secondary-color;
                 color: $neutral-color;
+                transition: 0.25s ease-in;
 
                 .nav-links{
                     display: flex;
@@ -119,22 +126,57 @@ nav{
                 }
                 
             }
+            
+            .active{
+                left: 0;
+            }
 
             .ham{
                 z-index: 501;
+                position: relative;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
-                height: 20px;
+                justify-content: space-around;
+                height: 24px;
                 width: 45px;
 
                 span{
-                    position: relative;
                     height: 2px;
                     width: 100%;
                     background-color: $primary-color;
+                    transition: 0.25s ease-in;
+                    animation: hamReveal;
+
+                    @keyframes hamReveal{
+                        0%{
+                            visibility: hidden;
+                        }
+                        80%{
+                            visibility: hidden; 
+                        }
+                        100%{
+                            visibility: visible;
+                        }
+                    }
+                }
+
+                .ham-bar-one-active{
+                    transform: rotate(45deg);
+
+                }
+                .ham-bar-two-active{
+                    display: none;
+                }
+                .ham-bar-three-active{
+                    transform: rotate(-45deg);
+                }
+
+                .ham-bar-one-active,
+                .ham-bar-two-active,
+                .ham-bar-three-active{
+                    position: absolute;
                 }
             }
         }
-    }    
+    }  
 }
