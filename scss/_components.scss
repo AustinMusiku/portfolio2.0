@@ -4,7 +4,6 @@ nav{
     .container{
         display: flex;
         justify-content: space-between;
-
         align-items: center;
 
         .nav-linkss{
@@ -38,7 +37,7 @@ nav{
                 position: relative;
                 height: 2px;
                 width: 100%;
-                background-color: $primary-color;
+                background-color: $neutral-color;
             }
 
             display: none;
@@ -81,7 +80,7 @@ nav{
             align-items: center;
             padding-top: 20px;
             padding-bottom: 20px;
-            background-color: $neutral-light-color;
+            background-color: $neutral-color;
             
             .logo{
                 padding: 0;
@@ -97,8 +96,7 @@ nav{
                 padding: 10em 1.25em;
                 display: flex;
                 flex-direction: column;
-                background-color: $secondary-color;
-                color: $neutral-color;
+                background-color: $primary-color;
                 transition: 0.25s ease-in;
 
                 .nav-links{
@@ -107,6 +105,15 @@ nav{
 
                     li{
                         padding: 15px 30px;
+
+                        a{
+                            font-weight: 300;
+                            color: $neutral-light-color;
+
+                            i{
+                                color: $neutral-light-color;
+                            }
+                        }
                     }
                 }
 
@@ -115,9 +122,7 @@ nav{
                 }
 
                 .navi-links{
-
                     height: 70%;
-
                 }
 
                 .social{
@@ -143,21 +148,8 @@ nav{
                 span{
                     height: 2px;
                     width: 100%;
-                    background-color: $primary-color;
+                    background-color: $secondary-color;
                     transition: 0.25s ease-in;
-                    animation: hamReveal;
-
-                    @keyframes hamReveal{
-                        0%{
-                            visibility: hidden;
-                        }
-                        80%{
-                            visibility: hidden; 
-                        }
-                        100%{
-                            visibility: visible;
-                        }
-                    }
                 }
 
                 .ham-bar-one-active{
@@ -175,6 +167,7 @@ nav{
                 .ham-bar-two-active,
                 .ham-bar-three-active{
                     position: absolute;
+                    background-color: $neutral-light-color;
                 }
             }
         }

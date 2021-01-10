@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
 
 $ff: 'Open Sans', san-serif;
-$fs-large: 5.6rem;
-$fs-1: 5rem;
+
+$fs-1: 64px;
 $fs-2: 2.6rem;
 $fs-3: 2.2rem;
 $fs-4: 1.8rem;
 $fs-p: 1.15rem;
 
-// $primary-color: #1f2937;
-$primary-color: #555555;
-// $accent-color: #00cdac;
+$primary-color: #1e1e1e;
 $accent-color: #5899f5;
 $secondary-color: #333333;
 $neutral-color: #fff;
@@ -115,7 +113,6 @@ nav{
 // responsive
 
 @media only screen and (max-width: 768px){
-    $fs-large: 1rem;
     $fs-1: 4.2rem;
     $fs-2: 3.1rem;
     $fs-3: 1.8rem;

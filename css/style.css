@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap");
 h1 {
-  font-size: 5rem;
+  font-size: 64px;
   line-height: 1;
   font-weight: 300;
   color: #333333;
@@ -14,7 +14,7 @@ h2 {
 
 h3 {
   font-size: 2.2rem;
-  color: #555555;
+  color: #1e1e1e;
 }
 
 h1,
@@ -40,12 +40,12 @@ nav .container .logo {
 nav .container .nav-links li a,
 nav .container .nav-links .social li a {
   font-size: 1.15rem;
-  color: #555555;
+  color: #1e1e1e;
 }
 nav .container .nav-links li a i,
 nav .container .nav-links .social li a i {
   font-size: 2.2rem;
-  color: #555555;
+  color: #1e1e1e;
 }
 nav .container .nav-links li:hover a,
 nav .container .nav-links .social li:hover a {
@@ -59,9 +59,9 @@ nav .container .nav-links .social li:hover a i {
 }
 
 .hero .container .hero-text h1 .h1-name {
-  font-size: 5rem;
+  font-size: 64px;
   font-weight: 300;
-  color: #555555;
+  color: #1e1e1e;
 }
 .hero .container .hero-text h1 .h1-greeting {
   font-size: 1.15rem;
@@ -132,7 +132,7 @@ nav .container .ham span {
   position: relative;
   height: 2px;
   width: 100%;
-  background-color: #555555;
+  background-color: #fff;
 }
 
 .cta, .btn {
@@ -163,7 +163,7 @@ nav .container .ham span {
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.747);
+    background-color: #fff;
   }
   nav .container .logo {
     padding: 0;
@@ -178,8 +178,7 @@ nav .container .ham span {
     padding: 10em 1.25em;
     display: flex;
     flex-direction: column;
-    background-color: #333333;
-    color: #fff;
+    background-color: #1e1e1e;
     transition: 0.25s ease-in;
   }
   nav .container .nav-linkss .nav-links {
@@ -188,6 +187,13 @@ nav .container .ham span {
   }
   nav .container .nav-linkss .nav-links li {
     padding: 15px 30px;
+  }
+  nav .container .nav-linkss .nav-links li a {
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.747);
+  }
+  nav .container .nav-linkss .nav-links li a i {
+    color: rgba(255, 255, 255, 0.747);
   }
   nav .container .nav-linkss .nav-links {
     flex-direction: column;
@@ -214,20 +220,8 @@ nav .container .ham span {
   nav .container .ham span {
     height: 2px;
     width: 100%;
-    background-color: #555555;
+    background-color: #333333;
     transition: 0.25s ease-in;
-    animation: hamReveal;
-  }
-  @keyframes hamReveal {
-    0% {
-      visibility: hidden;
-    }
-    80% {
-      visibility: hidden;
-    }
-    100% {
-      visibility: visible;
-    }
   }
   nav .container .ham .ham-bar-one-active {
     transform: rotate(45deg);
@@ -242,6 +236,7 @@ nav .container .ham span {
 nav .container .ham .ham-bar-two-active,
 nav .container .ham .ham-bar-three-active {
     position: absolute;
+    background-color: rgba(255, 255, 255, 0.747);
   }
 }
 .m-1 {
@@ -473,13 +468,16 @@ section {
     top: 0%;
     transform: translateY(0%);
   }
+  .showcase .hero .container .svg {
+    display: none;
+  }
 
   .container {
     padding: 0 1.5em;
   }
 }
 h1 {
-  font-size: 5rem;
+  font-size: 64px;
   line-height: 1;
   font-weight: 300;
   color: #333333;
@@ -492,7 +490,7 @@ h2 {
 
 h3 {
   font-size: 2.2rem;
-  color: #555555;
+  color: #1e1e1e;
 }
 
 h1,
@@ -518,12 +516,12 @@ nav .container .logo {
 nav .container .nav-links li a,
 nav .container .nav-links .social li a {
   font-size: 1.15rem;
-  color: #555555;
+  color: #1e1e1e;
 }
 nav .container .nav-links li a i,
 nav .container .nav-links .social li a i {
   font-size: 2.2rem;
-  color: #555555;
+  color: #1e1e1e;
 }
 nav .container .nav-links li:hover a,
 nav .container .nav-links .social li:hover a {
@@ -537,9 +535,9 @@ nav .container .nav-links .social li:hover a i {
 }
 
 .hero .container .hero-text h1 .h1-name {
-  font-size: 5rem;
+  font-size: 64px;
   font-weight: 300;
-  color: #555555;
+  color: #1e1e1e;
 }
 .hero .container .hero-text h1 .h1-greeting {
   font-size: 1.15rem;

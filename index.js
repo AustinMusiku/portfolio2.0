@@ -8,6 +8,9 @@ let three = document.querySelector('#ham-bar-three');
 let nav = document.querySelector('.nav-linkss');
 //get navigation links
 let link = document.querySelectorAll('.navigationLinks');
+// get svg container
+// let svgContainer = document.querySelector('svg');
+
 
 // event listeners
 ham.addEventListener('click', menuToggle);
