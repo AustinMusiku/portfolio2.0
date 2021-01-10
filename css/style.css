@@ -448,10 +448,6 @@ nav .container .ham .ham-bar-three-active {
   padding: 0 5em;
 }
 
-header {
-  width: 100%;
-}
-
 section {
   border-bottom: 1px solid black;
 }
@@ -459,16 +455,21 @@ section {
 .showcase {
   height: 100vh;
 }
-
 .showcase .hero .container {
   position: relative;
 }
 
-.showcase .hero .container .hero-text {
-  background-color: #fff;
-}
-
 @media only screen and (max-width: 768px) {
+  .showcase {
+    height: 100vh;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  .showcase .hero {
+    position: relative;
+  }
+
   .container {
     padding: 0 1.5em;
   }
