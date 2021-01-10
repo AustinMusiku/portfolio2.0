@@ -55,8 +55,10 @@ section{
 .showcase{
     height: 100vh;
 
-    .hero .container{
+    .hero{
         position: relative;
+        top: 50%;
+        transform: translateY(-55%);
     }
 }
 
