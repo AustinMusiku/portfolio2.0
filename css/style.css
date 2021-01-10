@@ -470,6 +470,8 @@ section {
   }
   .showcase .hero {
     position: relative;
+    top: 0%;
+    transform: translateY(0%);
   }
 
   .container {

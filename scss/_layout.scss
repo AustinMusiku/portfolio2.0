@@ -62,9 +62,7 @@ section{
     }
 }
 
-
 // Responsive
-
 @media only screen and (max-width: 768px){
 
     .showcase{
@@ -75,6 +73,8 @@ section{
 
         .hero{
             position: relative;
+            top: 0%;
+            transform: translateY(0%);
         }
     } 
 
