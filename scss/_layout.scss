@@ -46,12 +46,7 @@ $spaceamounts: (1,2,3,4,5);
     padding: 0 5em;
 }
 
-section{
-    border-bottom: 1px solid black;
-}
-
 // showcase
-
 .showcase{
     height: 100vh;
 
@@ -62,7 +57,12 @@ section{
     }
 }
 
-
+// about me
+// contact
+//footer
+footer{
+    width: 100%;
+}
 
 // Responsive
 @media only screen and (max-width: 768px){

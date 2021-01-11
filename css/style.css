@@ -8,13 +8,14 @@ h1 {
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   color: #5899f5;
 }
 
 h3 {
-  font-size: 2.2rem;
-  color: #1e1e1e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #333333;
 }
 
 h1,
@@ -23,7 +24,8 @@ h2 {
 }
 
 p {
-  font-size: 1.15rem;
+  font-weight: 300;
+  font-size: 1.05rem;
   color: #333333;
 }
 
@@ -35,26 +37,26 @@ p {
 }
 
 nav .container .logo {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 nav .container .nav-links li a,
 nav .container .nav-links .social li a {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: #1e1e1e;
 }
 nav .container .nav-links li a i,
 nav .container .nav-links .social li a i {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #1e1e1e;
 }
 nav .container .nav-links li:hover a,
 nav .container .nav-links .social li:hover a {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: #5899f5;
 }
 nav .container .nav-links li:hover a i,
 nav .container .nav-links .social li:hover a i {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #5899f5;
 }
 
@@ -64,11 +66,35 @@ nav .container .nav-links .social li:hover a i {
   color: #1e1e1e;
 }
 .hero .container .hero-text h1 .h1-greeting {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: #333333;
 }
 .hero .container .hero-text p {
   max-width: 600px;
+}
+
+.about {
+  background-color: #1e1e1e;
+}
+.about .banner .banner-text p {
+  color: rgba(255, 255, 255, 0.747);
+}
+
+footer .footer-social {
+  background-color: #1e1e1e;
+}
+footer .footer-social .container .social {
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 500px;
+}
+footer .footer-social .container .social li a i {
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.747);
+}
+footer .footer-social .container p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.747);
 }
 
 @media only screen and (max-width: 768px) {
@@ -135,10 +161,26 @@ nav .container .ham span {
   background-color: #fff;
 }
 
+.social {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.social li {
+  padding: 15px 30px;
+}
+
 .cta, .btn {
   margin: 20px 0px;
   padding: 10px 35px;
   border: 1px solid #5899f5;
+}
+
+.list-btns {
+  display: flex;
+  flex-direction: row;
+  gap: 0.2em;
+  padding: 0.1em 0;
 }
 
 .btn {
@@ -148,6 +190,37 @@ nav .container .ham span {
 .cta {
   background-color: #5899f5;
   color: #fff;
+}
+
+.banners {
+  display: flex;
+  flex-direction: column;
+  gap: 5em;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+}
+.banner img {
+  max-height: 400px;
+  max-width: 500px;
+}
+.banner .banner-text {
+  padding: 0em 2em;
+}
+
+.skillset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4em;
+  list-style-type: circle;
+}
+.skillset li {
+  max-width: 100px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -237,6 +310,19 @@ nav .container .ham .ham-bar-two-active,
 nav .container .ham .ham-bar-three-active {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.747);
+  }
+
+  .banners {
+    gap: 5em;
+  }
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    padding: 0em;
+  }
+  .banner .banner-text {
+    padding: 1em 0 0;
   }
 }
 .m-1 {
@@ -443,10 +529,6 @@ nav .container .ham .ham-bar-three-active {
   padding: 0 5em;
 }
 
-section {
-  border-bottom: 1px solid black;
-}
-
 .showcase {
   height: 100vh;
 }
@@ -454,6 +536,10 @@ section {
   position: relative;
   top: 50%;
   transform: translateY(-55%);
+}
+
+footer {
+  width: 100%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -484,13 +570,14 @@ h1 {
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   color: #5899f5;
 }
 
 h3 {
-  font-size: 2.2rem;
-  color: #1e1e1e;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #333333;
 }
 
 h1,
@@ -499,7 +586,8 @@ h2 {
 }
 
 p {
-  font-size: 1.15rem;
+  font-weight: 300;
+  font-size: 1.05rem;
   color: #333333;
 }
 
@@ -511,26 +599,26 @@ p {
 }
 
 nav .container .logo {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
 }
 nav .container .nav-links li a,
 nav .container .nav-links .social li a {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: #1e1e1e;
 }
 nav .container .nav-links li a i,
 nav .container .nav-links .social li a i {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #1e1e1e;
 }
 nav .container .nav-links li:hover a,
 nav .container .nav-links .social li:hover a {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: #5899f5;
 }
 nav .container .nav-links li:hover a i,
 nav .container .nav-links .social li:hover a i {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   color: #5899f5;
 }
 
@@ -540,11 +628,35 @@ nav .container .nav-links .social li:hover a i {
   color: #1e1e1e;
 }
 .hero .container .hero-text h1 .h1-greeting {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   color: #333333;
 }
 .hero .container .hero-text p {
   max-width: 600px;
+}
+
+.about {
+  background-color: #1e1e1e;
+}
+.about .banner .banner-text p {
+  color: rgba(255, 255, 255, 0.747);
+}
+
+footer .footer-social {
+  background-color: #1e1e1e;
+}
+footer .footer-social .container .social {
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 500px;
+}
+footer .footer-social .container .social li a i {
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.747);
+}
+footer .footer-social .container p {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.747);
 }
 
 @media only screen and (max-width: 768px) {
@@ -581,7 +693,8 @@ h2 {
 }
 
 img {
-  display: none;
+  height: 100%;
+  width: 100%;
 }
 
 ul {
