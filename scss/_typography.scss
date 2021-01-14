@@ -1,194 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;800&display=swap');
 
-$ff: 'Open Sans', san-serif;
+$dark: #1e1e1e;
+$light: #fff;
 
-$fs-1: 64px;
-$fs-2: 2.4rem;
-$fs-3: 1.8rem;
-$fs-4: 1.4rem;
-$fs-p: 1.05rem;
+$ff-xl: 64px;
+$ff-l: 34px;
+$ff-sm: 18px;
 
-$primary-color: #1e1e1e;
-$accent-color: #5899f5;
-$secondary-color: #333333;
-$neutral-color: #fff;
-$neutral-light-color: rgba(255, 255, 255, 0.747);
-
-h1{
-    font-size: $fs-1;
-    line-height: 1;
-    font-weight: 300;
-    color: $secondary-color;
-}
-
-h2{
-    font-size: $fs-2;
-    color: $accent-color;
-}
-
-h3{
-    font-size: $fs-3;
-    font-weight: 400;
-    color: $secondary-color;
-}
+$fw-200: 200;
+$fw-400: 400;
+$fw-800: 800;
 
 h1,
 h2{
-    font-weight: 800;
+    
+    font-size: $ff-xl;
+    line-height: 1;
 }
-
+h1,
+h2,
 p{
-    font-weight: 300;
-    font-size: $fs-p;
-    color: $secondary-color;
+    color: $dark;
 }
-
-.logo{
-    color: $secondary-color;
-    span{
-        color: $accent-color;
-    }
+h1{
+    font-weight: $fw-200;
 }
-
-//navbar 
-
-nav{
-    .container{
-        .logo{
-            font-size: $fs-4;
-        }
-
-        .nav-links,
-        .nav-links .social{
-            li{
-                a{
-                    font-size: $fs-p;
-                    color: $primary-color;
-
-                    i{
-                        font-size: $fs-3;
-                        color: $primary-color;
-                    }
-                }
-            }
-            li:hover{
-                a{
-                    font-size: $fs-p;
-                    color: $accent-color;
-
-                    i{
-                        font-size: $fs-3;
-                        color: $accent-color;
-                    }
-                }
-            }
-        }
-    }
+h2{
+    font-weight: 800;
+    text-transform: capitalize;
 }
-
-// hero
-.hero{
-    .container{
-        .hero-text{
-            h1{
-                .h1-name {
-                    font-size: $fs-1;
-                    font-weight: 300;
-                    color: $primary-color;
-                }
-                
-                .h1-greeting{
-                    font-size: $fs-p;
-                    color: $secondary-color;
-                }
-            }
-            p{
-
-                max-width: 600px;
-            }
-        }
-    }
+h3{
+    margin: .1em 0 .5em;
+    text-transform: capitalize;
+    font-weight: $fw-200;
+    font-size: 24px;
+}
+p{
+    margin: .4em auto 1em;
+    font-size: $ff-sm;
+    font-weight: $fw-400;
+    line-height: 1.6;
+}
+a{
+    text-decoration: none;
+    color: $dark;
+}
+i{
+    padding: .2em 0;
+    font-size: 4rem;
 }
 
 
-// about
-.about{
-    background-color: $primary-color;
-
-    .banner{
-        .banner-text{
-            p{
-                color: $neutral-light-color;
-            }
-        }
-    }
+.showcase-txt{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
+    max-width: 700px;
 }
 
-//footer
+// contact
+
+// footer
 footer{
-    .footer-social{
-        background-color: $primary-color;
-        .container{
-            .social{
-                left: 50%;
-                transform: translateX(-50%);
-                max-width: 500px;
-                li{
-                    a{
-                        i{
-                            font-size: $fs-2;
-                            color: $neutral-light-color;
-                        }
-                    }
-                }  
-            }
-            p{
-                text-align: center;
-                color: $neutral-light-color;
-            }
-        }
-    }
+    background-color: $dark;
 }
-
-// responsive
-
-@media only screen and (max-width: 768px){
-    $fs-1: 4.2rem;
-    $fs-2: 3.1rem;
-    $fs-3: 1.8rem;
-    $fs-4: 1.2rem;
-    $fs-p: 1.15rem;
-    $fs-sm: .8rem;
-    
-    h1{
-        font-size: $fs-1;
-        line-height: 1.1;
-    }
-    h2{
-        font-size: $fs-2;
-    }
-    h3{
-        font-size: $fs-3;
-    }
-    h1,
-    h2{
-        font-weight: 800;
-    }
-    
-    .hero{
-        .container{
-            .hero-text{
-                h1{
-                    .h1-name {
-                        font-size: $fs-2;
-                    }
-                    
-                    .h1-greeting{
-                        font-size: $fs-sm;
-                    }
-                    
-                }
-            }
-        }
-    }
- }

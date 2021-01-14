@@ -1,92 +1,41 @@
-//paddings and margins
-$spaceamounts: (1,2,3,4,5);
-
-@each $space in $spaceamounts{
-    .m-#{$space}{
-        margin: #{$space}em;
-    }
-    .p-#{$space}{
-        padding: #{$space}em;
-    }
-
-    // padding & margin up/down 
-    .mx-#{$space}{
-        margin: #{$space}em;
-    }
-    .px-#{$space}{
-        padding: #{$space}em;
-    }
-    .my-#{$space}{
-        margin: #{$space}em 0;
-    }
-    .py-#{$space}{
-        padding: #{$space}em 0;
-    }
-
-    // padding & margin up only
-
-    .myu-#{$space}{
-        margin-top: #{$space}em;
-    }
-    .pyu-#{$space}{
-        padding-top: #{$space}em;
-    }
-
-    // padding & margin down only
-    
-    .myd-#{$space}{
-        margin-bottom: #{$space}em;
-    }
-    .pyd-#{$space}{
-        padding-bottom: #{$space}em;
-    }
+.body{
+    width: 100vw;
 }
-
-.container{
-    padding: 0 5em;
+section{
+    padding: 3em 0;
+    scroll-behavior: smooth;
 }
-
-// showcase
 .showcase{
     height: 100vh;
-
-    .hero{
-        position: relative;
-        top: 50%;
-        transform: translateY(-55%);
-    }
 }
-
-// about me
-// contact
-//footer
-footer{
+.container{
+    margin: 0 auto;
+    padding: 0 5em;
+    max-width: 1280px;
     width: 100%;
+    height: 100%;
+}
+.section-body{
+    padding: 2em 0;
 }
 
-// Responsive
-@media only screen and (max-width: 768px){
+//contact section
+.contact-area{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5em;
+}
 
-    .showcase{
-        height: 100vh;
-        background-color: $neutral-color;
-        display: flex;
-        align-items: center;
 
-        .hero{
-            position: relative;
-            top: 0%;
-            transform: translateY(0%);
-
-            .container{
-                .svg{
-                    display: none;
-                }
-            }
-        }
-    } 
-
+// LAYOUT MEDIA QUERIES
+@media screen and (max-width: 768px){
     .container{
         padding: 0 1.5em;
+    }
+
+    // contact section
+    .contact-area{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5em;
     }
 }
