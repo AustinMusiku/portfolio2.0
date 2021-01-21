@@ -90,7 +90,45 @@ li{
 .deck{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5em;
+    gap: 1em;
+
+    .card{ 
+        position: relative; 
+        border-radius: 3px;
+        transition: .15s ease-in;
+
+        .card-overlay{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            background-color: rgba(0, 0, 0, 0.801);
+            border-radius: 3px;
+        }
+        img{
+            border-radius: 3px;
+        }
+        .card-text{
+            position: absolute;
+            margin: 1.5em;
+            padding: 0;
+            bottom: 0;
+
+            p,
+            h3{
+                margin: 0;
+                padding: 0;
+                color: $light;
+            }
+            h3{
+                font-weight: 200;
+                font-size: 20px;
+            }
+        }
+    }
+    .card:hover{
+        transform: scale(1.02);
+    }
 }
 
 // contact form

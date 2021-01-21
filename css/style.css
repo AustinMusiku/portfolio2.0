@@ -140,7 +140,42 @@ li:hover {
 .deck {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2.5em;
+  gap: 1em;
+}
+.deck .card {
+  position: relative;
+  border-radius: 3px;
+  transition: 0.15s ease-in;
+}
+.deck .card .card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.801);
+  border-radius: 3px;
+}
+.deck .card img {
+  border-radius: 3px;
+}
+.deck .card .card-text {
+  position: absolute;
+  margin: 1.5em;
+  padding: 0;
+  bottom: 0;
+}
+.deck .card .card-text p,
+.deck .card .card-text h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+.deck .card .card-text h3 {
+  font-weight: 200;
+  font-size: 20px;
+}
+.deck .card:hover {
+  transform: scale(1.02);
 }
 
 .contact-form {
@@ -182,7 +217,7 @@ li:hover {
 }
 .social-media a i {
   color: #fff;
-  font-size: 34px;
+  font-size: 32px;
 }
 
 footer .section-body {
@@ -332,6 +367,11 @@ footer {
   padding: 0;
   box-sizing: border-box;
   font-family: "Karla", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
