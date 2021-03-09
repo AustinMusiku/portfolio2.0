@@ -19,6 +19,22 @@ section{
     padding: 2em 0;
 }
 
+// about grid
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+
+    .img{
+        display: none;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    p{
+        padding: 3em 2em;
+    }
+}
+
 //contact section
 .contact-area{
     display: grid;
@@ -33,6 +49,22 @@ section{
         padding: 0 1.5em;
     }
 
+    // about grid
+    .about-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        .img{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+        p{
+            padding: 0em;
+        }
+    }
+    
     // contact section
     .contact-area{
         grid-template-columns: repeat(1, 1fr);
