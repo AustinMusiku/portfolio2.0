@@ -20,20 +20,20 @@ section{
 }
 
 // about grid
-.about-grid{
-    display: grid;
-    grid-template-columns: 1fr 1.5fr;
-
-    .img{
-        display: none;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-    }
-    p{
-        padding: 3em 2em;
-    }
-}
+// ----------.about-grid{
+// ----------    display: grid;
+// ----------    grid-template-columns: 1fr 1.5fr;
+// ----------
+// ----------    .img{
+// ----------        display: none;
+// ----------        width: 100%;
+// ----------        height: 100%;
+// ----------        background-color: black;
+// ----------    }
+// ----------    p{
+// ----------        padding: 3em 2em;
+// ----------    }
+// ----------}
 
 //contact section
 .contact-area{
