@@ -7,6 +7,57 @@ section{
 }
 .showcase{
     height: 100vh;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .showcase-txt{
+            position: relative;
+            padding: 0 4em 0 0;
+        }
+
+        .underlay{
+            position: relative;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.25em;
+            width: fit-content;
+            height: fit-content;
+            left: 0%;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: -1000;
+            
+            .underlay-minor{
+                width: 100px;
+                height: 100px;
+                left: 0%;
+                top: 50%;
+                background-color: $accent;
+            }
+            .semi-circle{
+                border-radius: 50% 50% 0 0;
+            }
+            .circle{
+                border-radius: 50%;
+            }
+            .bullet{
+                border-radius: 0 50% 0 0;
+            }
+            .pie{
+                border-radius: 50% 50% 0 50%;
+            }
+            .funnel{
+                border-radius: 0 700% 0 0;
+            }
+            .rotated{
+                transform: rotate(270deg);
+            }
+            .flipped{
+                transform: rotate(180deg);
+            }
+        }
+    }
 }
 .container{
     margin: 0 auto;
@@ -19,21 +70,26 @@ section{
     padding: 2em 0;
 }
 
-// about grid
-// ----------.about-grid{
-// ----------    display: grid;
-// ----------    grid-template-columns: 1fr 1.5fr;
-// ----------
-// ----------    .img{
-// ----------        display: none;
-// ----------        width: 100%;
-// ----------        height: 100%;
-// ----------        background-color: black;
-// ----------    }
-// ----------    p{
-// ----------        padding: 3em 2em;
-// ----------    }
-// ---------}
+// about section
+.about-grid{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+
+    .img{
+        width: 100%;
+        height: 500px;
+        background-color: black;
+    }
+    .txt{
+        h2{
+            margin-bottom: 1em;
+            font-size: 35px;
+        }
+            padding: 3em 5em;
+        
+    }
+}
 
 //contact section
 .contact-area{
@@ -49,18 +105,34 @@ section{
         padding: 0 1.5em;
     }
 
+    .showcase{
+        height: 100vh;
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+    
+            .showcase-txt{
+                padding: 0 1em 0 0;
+            }
+            .underlay{
+                display: none;
+            }
+        }
+    }
+
     // about grid
     .about-grid{
         display: grid;
         grid-template-columns: 1fr;
+        gap: 2em;
 
         .img{
             position: relative;
             width: 100%;
-            height: 100%;
+            height: 500px;
             background-color: black;
         }
-        p{
+        .txt{
             padding: 0em;
         }
     }

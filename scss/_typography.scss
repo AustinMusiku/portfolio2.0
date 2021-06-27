@@ -2,6 +2,7 @@
 
 $dark: #1e1e1e;
 $light: #fff;
+$accent: #f7f7f7da;
 
 $ff-xl: 64px;
 $ff-l: 32px;
@@ -11,23 +12,21 @@ $fw-200: 200;
 $fw-400: 400;
 $fw-800: 800;
 
-h1,
-h2{
-    
+
+.hero-txt,
+h1{
     font-size: $ff-xl;
-    line-height: 1;
 }
-h1,
-h2,
-p{
-    color: $dark;
-}
+
 h1{
     font-weight: $fw-200;
 }
 h2{
+    position: relative;
     font-weight: 800;
+    font-size: $ff-l;
     text-transform: capitalize;
+    width: fit-content;
 }
 h3{
     margin: .1em 0 .5em;
@@ -35,6 +34,16 @@ h3{
     font-weight: $fw-200;
     font-size: 24px;
 }
+
+h1,
+h2,
+p{
+    color: $dark;
+    line-height: 1;
+}
+
+
+
 p{
     margin: .4em auto 1em;
     font-size: $ff-sm;
