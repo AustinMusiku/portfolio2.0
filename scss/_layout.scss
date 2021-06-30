@@ -82,6 +82,7 @@ section{
             filter: grayscale(100%);
         }
     }
+
     .txt{
         padding: 1em 5em;
 
@@ -130,8 +131,6 @@ section{
         .img{
             position: relative;
             width: 100%;
-            height: 500px;
-            background-color: black;
         }
         .txt{
             padding: 0em;

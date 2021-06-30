@@ -414,8 +414,6 @@ section {
   .about-grid .img {
     position: relative;
     width: 100%;
-    height: 500px;
-    background-color: black;
   }
   .about-grid .txt {
     padding: 0em;
