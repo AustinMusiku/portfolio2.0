@@ -244,10 +244,11 @@ footer{
         top: 0;
         right: 0;
         width: 100%;
+        border: 1px solid black;
 
         .ham{
             position: fixed;
-            right: 1.5em;
+            right: 0.5em;
         }
     }
     

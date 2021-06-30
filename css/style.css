@@ -276,10 +276,11 @@ footer .section-body p {
     top: 0;
     right: 0;
     width: 100%;
+    border: 1px solid black;
   }
   .nav .ham {
     position: fixed;
-    right: 1.5em;
+    right: 0.5em;
   }
 
   .deck {
@@ -370,14 +371,11 @@ section {
   grid-template-columns: 1fr 1.5fr;
   align-items: center;
 }
-.about-grid .img {
-  width: 100%;
-  height: 500px;
-  background-color: black;
-  border-radius: 3px;
+.about-grid .img img {
+  filter: grayscale(100%);
 }
 .about-grid .txt {
-  padding: 3em 5em;
+  padding: 1em 5em;
 }
 .about-grid .txt h2 {
   margin-bottom: 1em;
