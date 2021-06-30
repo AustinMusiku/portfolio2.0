@@ -22,6 +22,7 @@ h3 {
   text-transform: capitalize;
   font-weight: 200;
   font-size: 24px;
+  letter-spacing: 0.05em;
 }
 
 h1,
@@ -45,7 +46,8 @@ a {
 
 i {
   padding: 0.2em 0;
-  font-size: 4rem;
+  font-size: 1em;
+  font-weight: 100;
 }
 
 .showcase-txt {
@@ -142,8 +144,11 @@ li:hover {
 
 .deck {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1em;
+}
+.deck * {
+  transition: 0.25s;
 }
 .deck .card {
   position: relative;
@@ -155,7 +160,7 @@ li:hover {
   width: 100%;
   height: 100%;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.801);
+  background-color: rgba(0, 0, 0, 0.699);
   border-radius: 3px;
 }
 .deck .card img {
@@ -167,18 +172,38 @@ li:hover {
   padding: 0;
   bottom: 0;
 }
-.deck .card .card-text p,
-.deck .card .card-text h3 {
+.deck .card .card-text a, .deck .card .card-text p, .deck .card .card-text h3 {
   margin: 0;
   padding: 0;
-  color: #fff;
+  color: #f7f7f7da;
 }
 .deck .card .card-text h3 {
-  font-weight: 200;
+  margin: 0 0 0.5em 0;
+  font-weight: 400;
   font-size: 20px;
+}
+.deck .card .card-text p {
+  margin-bottom: 0.5em;
+  font-size: 16px;
+  display: none;
+}
+.deck .card .card-text a {
+  display: none;
+}
+.deck .card .card-text a i {
+  margin-right: 0.25em;
+}
+.deck .card .card-text a:hover {
+  text-decoration: line-through;
 }
 .deck .card:hover {
   transform: scale(1.02);
+}
+.deck .card:hover .card-overlay {
+  background-color: rgba(0, 0, 0, 0.858);
+}
+.deck .card:hover .card-text a {
+  display: inline;
 }
 
 .contact-form {
@@ -349,6 +374,7 @@ section {
   width: 100%;
   height: 500px;
   background-color: black;
+  border-radius: 3px;
 }
 .about-grid .txt {
   padding: 3em 5em;
@@ -425,6 +451,7 @@ h3 {
   text-transform: capitalize;
   font-weight: 200;
   font-size: 24px;
+  letter-spacing: 0.05em;
 }
 
 h1,
@@ -448,7 +475,8 @@ a {
 
 i {
   padding: 0.2em 0;
-  font-size: 4rem;
+  font-size: 1em;
+  font-weight: 100;
 }
 
 .showcase-txt {

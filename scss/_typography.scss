@@ -7,6 +7,7 @@ $accent: #f7f7f7da;
 $ff-xl: 64px;
 $ff-l: 32px;
 $ff-sm: 18px;
+$ff-xsm: 16px;
 
 $fw-200: 200;
 $fw-400: 400;
@@ -33,6 +34,7 @@ h3{
     text-transform: capitalize;
     font-weight: $fw-200;
     font-size: 24px;
+    letter-spacing: .05em;
 }
 
 h1,
@@ -56,7 +58,8 @@ a{
 }
 i{
     padding: .2em 0;
-    font-size: 4rem;
+    font-size: 1em;
+    font-weight: 100;
 }
 
 
