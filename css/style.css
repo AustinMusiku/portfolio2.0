@@ -72,6 +72,18 @@ button {
   border-radius: 3px;
 }
 
+a.btn {
+  display: inline-block;
+  margin: 1em auto;
+  padding: 1em 2.5em;
+  outline: none;
+  border: none;
+  background-color: #1e1e1e;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
 .nav-active {
   background-color: #f7f7f7da;
 }
