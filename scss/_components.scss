@@ -58,7 +58,7 @@ a.btn{
             background-color: $dark;
             border-radius: 50px;
             transform: rotate(0deg);
-            transition: .25s ease-in;
+            transition: .25s cubic-bezier(0.7, 0.04, 0.32, 0.99);
         }
         .ham-bar:nth-child(2){
             transition: .25s ease-in-out .2s;

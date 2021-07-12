@@ -5,6 +5,7 @@ let one = document.querySelector('.ham-bar-one');
 let two = document.querySelector('.ham-bar-two');
 let nav = document.querySelector('.nav');
 let links = document.querySelectorAll('.nav-links');
+let heroTextCovers = document.querySelectorAll('.hero-txt-cover')
 
 // event listeners
 ham.addEventListener('click', menuToggler);
@@ -19,3 +20,4 @@ function menuToggler(){
     two.classList.toggle('two');
     nav.classList.toggle('nav-active')
 }
+

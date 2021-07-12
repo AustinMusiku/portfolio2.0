@@ -4,7 +4,7 @@ $dark: #1e1e1e;
 $light: #fff;
 $accent: #f7f7f7da;
 
-$ff-xl: 64px;
+$ff-xl: 3em;
 $ff-l: 32px;
 $ff-sm: 18px;
 $ff-xsm: 16px;
@@ -16,8 +16,11 @@ $fw-800: 800;
 
 .hero-txt,
 h1{
+    position: relative;
     font-size: $ff-xl;
+    line-height: 1;
 }
+
 
 h1{
     font-weight: $fw-200;
