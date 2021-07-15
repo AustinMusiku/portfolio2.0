@@ -15,53 +15,7 @@ section{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
-        .showcase-txt{
-            padding: 0 4em 0 0;
-        }
-
-        .underlay{
-            position: relative;
-            display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            gap: 0.25em;
-            width: fit-content;
-            height: fit-content;
-            left: 0%;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: -1000;
-            
-            .underlay-minor{
-                width: 100px;
-                height: 100px;
-                left: 0%;
-                top: 50%;
-
-                // background-color: rgba(51, 68, 51, 0.404);
-                background-color: $accent;
-            }
-            .semi-circle{
-                border-radius: 50% 50% 0 0;
-            }
-            .circle{
-                border-radius: 50%;
-            }
-            .bullet{
-                border-radius: 0 50% 0 0;
-            }
-            .pie{
-                border-radius: 50% 50% 0 50%;
-            }
-            .funnel{
-                border-radius: 0 700% 0 0;
-            }
-            .rotated{
-                transform: rotate(270deg);
-            }
-            .flipped{
-                transform: rotate(180deg);
-            }
-        }
+        
     }
 }
 .container{

@@ -56,7 +56,7 @@ i {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  height: fit-content;
+  height: max-content;
   max-width: 700px;
 }
 
@@ -261,10 +261,15 @@ li:hover {
   border: none;
   background-color: #fff;
 }
-.contact-form button {
+
+form #sendButton {
   width: 100%;
+  margin: 1em auto;
+  padding: 1em 2.5em;
   outline: none;
   border: none;
+  background-color: #1e1e1e;
+  color: #fff;
   border-radius: 3px;
 }
 
@@ -340,49 +345,6 @@ section {
 .showcase .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-.showcase .container .showcase-txt {
-  padding: 0 4em 0 0;
-}
-.showcase .container .underlay {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 0.25em;
-  width: fit-content;
-  height: fit-content;
-  left: 0%;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: -1000;
-}
-.showcase .container .underlay .underlay-minor {
-  width: 100px;
-  height: 100px;
-  left: 0%;
-  top: 50%;
-  background-color: #f7f7f7da;
-}
-.showcase .container .underlay .semi-circle {
-  border-radius: 50% 50% 0 0;
-}
-.showcase .container .underlay .circle {
-  border-radius: 50%;
-}
-.showcase .container .underlay .bullet {
-  border-radius: 0 50% 0 0;
-}
-.showcase .container .underlay .pie {
-  border-radius: 50% 50% 0 50%;
-}
-.showcase .container .underlay .funnel {
-  border-radius: 0 700% 0 0;
-}
-.showcase .container .underlay .rotated {
-  transform: rotate(270deg);
-}
-.showcase .container .underlay .flipped {
-  transform: rotate(180deg);
 }
 
 .container {
@@ -512,7 +474,7 @@ i {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  height: fit-content;
+  height: max-content;
   max-width: 700px;
 }
 

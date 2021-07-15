@@ -47,38 +47,6 @@
                 <p class="para">I create value driven web solutions for individuals and companies using the MEVN stack</p>
                 <a href="#projects" class="btn">view projects</a>
             </div>
-            <div class="underlay">
-                <div class="underlay-minor red semi-circle flipped"></div>
-                <div class="underlay-minor green circle"></div>
-                <div class="underlay-minor blue pie flipped"></div>
-                <div class="underlay-minor yellow funnel rotated"></div>
-                <div class="underlay-minor blue circle"></div>
-                <div class="underlay-minor red pie rotated"></div>
-                <div class="underlay-minor blue circle"></div>
-                <div class="underlay-minor green semi-circle flipped"></div>
-                <div class="underlay-minor yellow bullet"></div>
-                <div class="underlay-minor red semi-circle"></div>
-                <div class="underlay-minor yellow circle"></div>
-                <div class="underlay-minor green pie"></div>
-                <div class="underlay-minor yellow funnel rotated"></div>
-                
-                <div class="underlay-minor blue circle"></div>
-                <div class="underlay-minor red pie rotated"></div>
-                <div class="underlay-minor blue circle"></div>
-
-                <div class="underlay-minor green semi-circle"></div>
-                <div class="underlay-minor yellow bullet flipped"></div>
-                <div class="underlay-minor red semi-circle"></div>
-
-
-                <div class="underlay-minor yellow circle"></div>
-                <div class="underlay-minor green pie flipped"></div>
-                <div class="underlay-minor red funnel"></div>
-
-                <div class="underlay-minor green circle"></div>
-                <div class="underlay-minor blue pie rotated"></div>
-                <div class="underlay-minor yellow circle"></div>
-            </div>
         </div>
     </div>
 
@@ -145,7 +113,7 @@
                         <h3>get in touch with me.</h3>
                         <p class="para">Hey since you're here, say hi!, ask me a question.<br>Want to work with me on a project? Fill the contact form.<br>I'm not Kanye West; <strong>"You can tell me something"😉</strong></p>
                     </div>
-                    <form action="#" class="contact-form" netlify>
+                    <form method="POST" action="./contact.php" class="contact-form">
                         <div class="form-field form-name">
                             <label for="name">Name</label>
                             <input type="text" name="name" class="name" placeholder="name">
@@ -158,7 +126,7 @@
                             <label for="msg">your message</label>
                             <textarea name="msg" cols="30" rows="5"></textarea>
                         </div>
-                        <button type="submit" class="btn">Submit</button>
+                        <input id="sendButton" type="submit" name="submit" value="submit">
                     </form>
                 </div>
             </div>
