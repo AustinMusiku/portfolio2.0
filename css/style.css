@@ -208,8 +208,21 @@ li:hover {
   padding: 0;
   color: #f7f7f7da;
 }
+.deck .card .card-text .tags {
+  margin: 0.5em 0;
+  display: none;
+  flex-direction: row;
+  gap: 0.25em;
+}
+.deck .card .card-text .tags .tag {
+  padding: 0.2em 0.55em;
+  background-color: #f1f1f1b4;
+  color: #1e1e1e;
+  font-size: 12px;
+  border-radius: 10px;
+}
 .deck .card .card-text h3 {
-  margin: 0 0 0.5em 0;
+  margin: 0 0 0.4em 0;
   font-weight: 400;
   font-size: 20px;
 }
@@ -232,6 +245,9 @@ li:hover {
 }
 .deck .card:hover .card-overlay {
   background-color: rgba(0, 0, 0, 0.858);
+}
+.deck .card:hover .card-text .tags {
+  display: flex;
 }
 .deck .card:hover .card-text a {
   display: inline;

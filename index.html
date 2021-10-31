@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="Description" content="Hello, my name is Austin Musiku and I am a web developer, let me help you build your own web prescence">
+    <meta name="Description" content="Hello, my name is Austin Musiku and I am a web developer, let me help you build your own web presence">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="X-UA-Compatible" content="IE=7">
@@ -50,7 +50,7 @@
     <section id="about">
         <div class="container">
             <div class="section-body about-grid">
-                <div class="img"><img src="./assets/images/man2.jpg" alt=""></div>
+                <div class="img"><img src="./assets/images/man2.jpg" alt="man with a laptop in the living room"></div>
                 <div class="txt">
                     <h2>I design and build working systems</h2>
                     <p>Hey, I'm a tech enthusiast who picked up web development as a hobby at the age of 16 and fell in love with it since.I'm based in Nairobi, Kenya as I continue pursuing my Bsc. Computer Science. My tech stack includes: HTML, CSS, SASS, Javascript/Typescript ,NodeJs, MongoDB and MYSQL. I am also conversant in Vue, Go and Python</p>
@@ -69,29 +69,61 @@
 
                     <div class="card">
                         <div class="card-overlay"></div>
-                        <img src="./assets/images/solomons.png" alt="">
+                        <img src="./assets/images/fplfriend.png" alt="fpl Friend landing page">
+                        <div class="card-text">
+                            <h3>fpl Friend</h3>
+                            <div class="tags">
+                                <div class="tag">nodejs</div>
+                                <div class="tag">graphql</div>
+                                <div class="tag">express</div>
+                                <div class="tag">scss</div>
+                                <div class="tag">d3js</div>
+                            </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, consectetur?</p>
+                            <a target="_blank" rel="noopener" name="fpl Friend link" href="https://fplfriend.herokuapp.com"><i class="fas fa-link"></i> visit site</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-overlay"></div>
+                        <img src="./assets/images/solomons.png" alt="solomons honey landing page">
                         <div class="card-text">
                             <h3>solomons honey</h3>
+                            <div class="tags">
+                                <div class="tag">nodejs</div>
+                                <div class="tag">express</div>
+                                <div class="tag">mysql</div>
+                                <div class="tag">scss</div>
+                            </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, consectetur?</p>
-                            <a target="_blank" href="https://solomons.austinmusiku.co.ke"><i class="fas fa-link"></i> visit site</a>
+                            <a target="_blank" rel="noopener" name="solomons honey link" href="https://solomons.austinmusiku.co.ke"><i class="fas fa-link"></i> visit site</a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-overlay"></div>
-                        <img src="./assets/images/umwa.png" alt="">
+                        <img src="./assets/images/umwa.png" alt="utawala mulembe self help group landing page">
                         <div class="card-text">
-                            <h3>Utawala Mulembe Self Hep Group</h3> 
+                            <h3>Utawala Mulembe Self Hep Group</h3>
+                            <div class="tags">
+                                <div class="tag">nodejs</div>
+                                <div class="tag">express</div>
+                                <div class="tag">scss</div>
+                            </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, consectetur?</p>
-                            <a target="_blank" href="https://umwa.austinmusiku.co.ke"><i class="fas fa-link"></i> visit site</a>
+                            <a target="_blank" rel="noopener" name="Utawala mulembe self help group link" href="https://umwa.austinmusiku.co.ke"><i class="fas fa-link"></i> visit site</a>
                         </div>
                     </div>
                     <div class="card">
                         <div class="card-overlay"></div>
-                        <img src="./assets/images/instop.png" alt="">
+                        <img src="./assets/images/instop.png" alt="Instop serverless landing page">
                         <div class="card-text">
                             <h3>instop serverless</h3>
+                            <div class="tags">
+                                <div class="tag">GSAP</div>
+                                <div class="tag">scss</div>
+                                <div class="tag">javascript</div>
+                            </div>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus, consectetur?</p>
-                            <a target="_blank" href="https://instop.netlify.app"><i class="fas fa-link"></i> visit site</a>
+                            <a target="_blank" rel="noopener" name="instop serverless link" href="https://instop.netlify.app"><i class="fas fa-link"></i> visit site</a>
                         </div>
                     </div>
 
@@ -112,16 +144,16 @@
                     </div>
                     <form method="POST" action="./contact.php" class="contact-form">
                         <div class="form-field form-name">
-                            <label for="name">Name</label>
-                            <input type="text" name="name" class="name" placeholder="name">
+                            <label for="name">name</label>
+                            <input type="text" name="name" class="name" placeholder="John Doe">
                         </div>
                         <div class="form-field form-email">
                             <label for="email">email</label>
-                            <input type="email"  name="email" class="email" placeholder="email">
+                            <input type="email"  name="email" class="email" placeholder="Johndoe@gmail.com">
                         </div>
                         <div class="form-field form-msg">
-                            <label for="msg">your message</label>
-                            <textarea name="msg" cols="30" rows="5"></textarea>
+                            <label for="msg">message</label>
+                            <textarea name="msg" class="msg" id="msg" cols="30" rows="5"></textarea>
                         </div>
                         <input id="sendButton" type="submit" name="submit" value="submit">
                     </form>
@@ -133,14 +165,15 @@
         <div class="container">
             <div class="section-body">
                 <div class="social-media">
-                    <a target="_blank" href="https://twitter.com/musikuAustin"><i class="fab fa-twitter"></i></a>
-                    <a target="_blank" href="https://github.com/MusikuAustin"><i class="fab fa-github"></i></a>
-                    <a target="_blank" href="https://instagram.com/_musiku"><i class="fab fa-linkedin"></i></a>
+                    <a target="_blank" rel="noopener" name="twitter link icon" href="https://twitter.com/musikuAustin"><i class="fab fa-twitter"></i></a>
+                    <a target="_blank" rel="noopener" name="github link icon" href="https://github.com/MusikuAustin"><i class="fab fa-github"></i></a>
+                    <a target="_blank" rel="noopener" name="linkedIn link icon" href="https://www.linkedin.com/in/austin-musiku-0b37b819b/"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <p>Austin Musiku 2021</p>
+                <p>Austin Musiku &copy;2021</p>
             </div>
         </div>
     </footer>
 </body>
 <script src="https://kit.fontawesome.com/2343bc677e.js" crossorigin="anonymous"></script>
+<script src="./main.js"></script>
 </html>

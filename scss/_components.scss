@@ -154,8 +154,24 @@ li{
                 padding: 0;
                 color: $accent;
             }
+
+            .tags{
+                margin: .5em 0;
+                display: none;
+                flex-direction: row;
+                gap: .25em;
+            
+                .tag{
+                    padding: .2em .55em;
+                    background-color: #f1f1f1b4;
+                    color: $dark;
+                    font-size: 12px;
+                    border-radius: 10px;
+                }
+            }
+
             h3{
-                margin: 0 0 .5em 0;
+                margin: 0 0 .4em 0;
                 font-weight: 400;
                 font-size: 20px;
             }
@@ -184,6 +200,10 @@ li{
             background-color: rgba(0, 0, 0, 0.858);
         }
         .card-text{
+            .tags{
+                display: flex;
+            }
+
             a{
                 display: inline;
             }
